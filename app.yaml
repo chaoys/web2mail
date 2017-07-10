@@ -1,0 +1,10 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /_ah/mail/www@.*\.appspotmail\.com
+  script: www.app
+
+inbound_services:
+- mail
